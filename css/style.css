@@ -1,61 +1,123 @@
-/*
-Theme Name: KenzieFlix
-Author: Kenzie Academy
-Author URI: kenzie.com.br;
-Version: 1.0
- 
---------------------------------------------
-SUGESTÃO DE ESTRUTURAÇÃO BASE 
---------------------------------------------
-**** DECLARAÇÃO DE VARIÁVEIS
-**** BODY
-**** TOPO
-**** RODAPÉ
-**** PÁGINA INICIAL
-*/
 
-/* VARIÁVEIS */
-:root{
-  
+/* * *  Body/Header * * */
+
+	body {
+		color: white;
+		background-color: #00002e;
+		font-family: 'Helvetica Neue', Helvetica,Arial,sans-serif;
+	}
+
+	header.topo {
+		text-align: center;
+	}
+	header.topo:hover{
+		cursor: help;
+	}
+
+		
+	h2 {
+		position: relative;
+		font-size: 45px;
+		text-align: center;
+		justify-content: center;
+	}
+
+	h3 {
+		padding-top: 10px;
+	}
+	figure {	
+		width: 186px;
+		margin: 25px;
+		text-align: center;
+		justify-content: center;
+		height: 186px;
+	}
+
+	.profile__pics__card figure img {
+		width: 100%;
+	}
+
+	figure:hover  {
+		border: 3px solid white;
+		cursor: pointer;
+	}
+
+/* * * Ids/Classes * * */
+	.profile__pics{
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		flex-direction: column;
+		margin: 10px;
+	}
+
+
+	.profile__pics__card {
+		position: relative;
+		margin: 10px;
+		text-align:center
+
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		flex-direction: column;
+	}
+
+
+	.profile__pics__addPerfil {
+		filter: brightness(70%);
+		cursor: pointer;
+	}
+
+	.profile__pics__addPerfil:hover {
+		filter: brightness(170%);
+		cursor: pointer;
+		transition: 0.5s;
+	}
+
+
+/* * * Footer * * */
+
+footer {
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+footer button {
+	text-align: center;
+	opacity: 85%;
+	background-color: #00002e;
+	color: white;
+	border: 2px solid white;
+	border-radius: 2px;
+	padding: 10px 30px;
 }
 
-/*BODY*/
-	body{
-		color: white;
-		background-color: black;
-		width: 1400px;
+footer button:hover {
+	cursor: pointer;
+	opacity: 125%;
+}
+
+
+
+/*  * * Media Querie * * */
+	@media screen and (min-width: 800px) {
 		
-	
+		header.topo{
+		text-align:left;
 		}
-
-/*TOPO*/
-	header.topo{
-		margin-top: 0;
-		margin-left: 0;
-
-	}
-
-	h2 {
-		font-size: 50px;
-		text-align: center;
-	}
-
-	ul {
-		text-align: center;
-	}
-
-	ul:hover {
-		border: 2px white;
-	}
-
-	@media screen and (min-width: 1370px)
+		
+		.profile__pics{
+		box-sizing: border-box;
 		display: flex;
-		flex-direction: row
-	}
-/*RODAPÉ*/
-	
+		justify-content: center;
+		flex-direction: row;
+		margin: 10px
+		}	
 
-/*PÁGINA INICIAL*/
-	div.pg-home{
-		text-align: center;
+		footer button {		
+		}
 	}
+
+
