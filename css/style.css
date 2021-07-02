@@ -21,18 +21,41 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /*BODY*/
 	body{
-
-	}
+		color: white;
+		background-color: black;
+		width: 1400px;
+		
+	
+		}
 
 /*TOPO*/
 	header.topo{
-		
+		margin-top: 0;
+		margin-left: 0;
+
 	}
 
+	h2 {
+		font-size: 50px;
+		text-align: center;
+	}
+
+	ul {
+		text-align: center;
+	}
+
+	ul:hover {
+		border: 2px white;
+	}
+
+	@media screen and (min-width: 1370px)
+		display: flex;
+		flex-direction: row
+	}
 /*RODAPÉ*/
 	
 
 /*PÁGINA INICIAL*/
 	div.pg-home{
-		
+		text-align: center;
 	}
