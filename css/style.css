@@ -6,15 +6,12 @@
 		background-color: #00002e;
 		font-family: 'Helvetica Neue', Helvetica,Arial,sans-serif;
 	}
-
 	header.topo {
 		text-align: center;
 	}
 	header.topo:hover{
 		cursor: help;
 	}
-
-		
 	h2 {
 		position: relative;
 		font-size: 45px;
@@ -47,27 +44,24 @@
 		margin: 0 auto;
 		display: flex;
 		justify-content: center;
-		text-align: center;
 		flex-direction: column;
-		margin: 10px;
+		text-align: center;
+		margin: 0 auto;
 	}
 
-
 	.profile__pics__card {
-		position: relative;
-		margin: 10px;
+		margin: 0 auto;
 		text-align:center
-
-		display: flex;
 		justify-content: center;
 		text-align: center;
-		flex-direction: column;
+		padding: 15px
 	}
 
 
 	.profile__pics__addPerfil {
 		filter: brightness(70%);
 		cursor: pointer;
+		margin: 20px 20px 20px 20px;
 	}
 
 	.profile__pics__addPerfil:hover {
@@ -102,7 +96,7 @@ footer button:hover {
 
 
 /*  * * Media Querie * * */
-	@media screen and (min-width: 800px) {
+	@media screen and (min-width: 500px) {
 		
 		header.topo{
 		text-align:left;
@@ -113,10 +107,27 @@ footer button:hover {
 		display: flex;
 		justify-content: center;
 		flex-direction: row;
-		margin: 10px
+		flex-wrap: wrap;
+		margin: 0px 30px 0px 30px;
+		padding: 40px 100px 100px 100px;
+		text-align: center;
 		}	
+		
+		.profile__pics__addPerfil img {
+			display: flex;
+			text-align: center;
+			justify-content: center;
+			margin-top: 45px;
+			padding-bottom: 58px;
+		}
+
+		}
+		.profile__pics__addPerfil {
+
+		}
 
 		footer button {		
+			margin: 25px;
 		}
 	}
 
