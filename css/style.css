@@ -17,28 +17,18 @@
 		text-align: center;
 	}
 
-	h3 {
-		padding-top: 10px;
-	}
-	figure {	
-		margin: 25px;
-		text-align: center;
-		justify-content: center;
-		height: 186px;
-	
-	}
 
 	.profile__pics__card figure img {
-		width: 186px;
-
+	border: 3px solid #00002e;
 	}
 
-	figure:hover  {
+	.profile__pics__card figure img:hover  {
 		border: 3px solid white;
 		cursor: pointer;
+		transition: 0.1s;
 	}
 
-	.profile__pics__addPerfil figure {
+	.profile__pics__card figure {
 		margin: 0 auto;
 	}
 
@@ -47,30 +37,31 @@
 		margin: 0 auto;
 		display: flex;
 		justify-content: center;
-		flex-direction: column;
+		flex-direction: row;
 		text-align: center;
 		margin: 0 auto;
 	}
 
 	.profile__pics__card {
-		margin: 0 auto;
-		text-align:center
-		justify-content: center;
-		text-align: center;
-		padding: 15px
+		width: 186px;
 	}
 
-
-	.profile__pics__addPerfil {
+	.profile__pics__card figure1 {
 		filter: brightness(70%);
-		cursor: pointer;
-		margin: 20px 20px 20px 20px;
+		cursor: pointer;	
+	}
+	
+	.profile__pics__card figure1 img {
+		width: 90px;
+		margin-top: 37px;
+		padding-bottom: 32px;
 	}
 
-	.profile__pics__addPerfil:hover {
+
+	.profile__pics__card figure1:hover {
 		filter: brightness(170%);
 		cursor: pointer;
-		transition: 0.5s;
+		transition: 0.55s;
 	}
 
 
@@ -83,7 +74,7 @@ footer {
 }
 footer button {
 	text-align: center;
-	opacity: 85%;
+	opacity: 65%;
 	background-color: #00002e;
 	color: white;
 	border: 2px solid white;
@@ -96,6 +87,22 @@ footer button:hover {
 	opacity: 125%;
 }
 
+.profile__pics__addPerfil {
+	margin-top: 70px;
+}
+.profile__pics__addPerfil h3 {
+	margin-top: 70px;
+}
+
+.profile__pics__card figure img {
+	width: 150px;
+}
+
+footer button {		
+	margin: 25px;
+}
+
+
 
 
 /*  * * Media Querie * * */
@@ -105,25 +112,35 @@ footer button:hover {
 		text-align:left;
 		}
 		
-		.profile__pics{
-		box-sizing: border-box;
-		display: flex;
-		justify-content: center;
-		flex-direction: row;
-		text-align: center;
-		}	
-		
-		}
-		.profile__pics__addPerfil {
-			margin-top: 70px;
-		}
-		.profile__pics__addPerfil h3 {
-			margin-top: 70px;
+		#box1 {
+			width: 400px;
+			display: flex;
+			flex-direction: row;
+			float: right;
 		}
 
-		footer button {		
-			margin: 25px;
+		#box2 {
+			width: 400px;
+			display: flex;
+			flex-direction: row;
+			float: left;
 		}
+
+		#GabrielMaria {
+			padding-right: 45px;
+		}
+
+		.profile__pics{
+			width: 858px;
+		}	
+		
+		.profile__pics__card figure1 img {
+			margin-top: 35px;
+			padding-bottom: 33px;
+			
+		}
+
+
 	}
 
 
