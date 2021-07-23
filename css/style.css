@@ -17,6 +17,10 @@
 		text-align: center;
 	}
 
+	#box1 ,#box2 {
+		width: 186px;
+	}
+
 
 	.profile__pics__card figure img {
 	border: 3px solid #00002e;
@@ -64,7 +68,21 @@
 		transition: 0.55s;
 	}
 
+	.Gabriel {
+		width: 186px;
 
+	}
+	.Maria {
+		width: 186px;
+
+	}
+	.Renato {
+		width: 186px;
+	}
+
+	.AddPerfil {
+		width: 186px;
+	}
 /* * * Footer * * */
 
 footer {
@@ -126,10 +144,21 @@ footer button {
 			float: left;
 		}
 
-		#GabrielMaria {
-			padding-right: 45px;
+		.Gabriel {
+			width: 186px;
+			padding-right: 15px;
+		}
+		.Maria {
+			width: 186px;
+			padding-right: 15px;
+		}
+		.Renato {
+			width: 186px;
 		}
 
+		.AddPerfil {
+			width: 186px;
+		}
 		.profile__pics{
 			width: 858px;
 		}	
